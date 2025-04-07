@@ -60,10 +60,10 @@
 </script>
 
 <main>
-  <h1>Drikkebuttiken</h1>
+  <h1>Fridge Shop</h1>
   
   <div class="welcome-section">
-    <h2>Welcome to Drikkebuttiken</h2>
+    <h2>Welcome to Fridge Shop</h2>
     <p>Discover our selection of premium beverages. We offer a variety of drinks to suit every taste and occasion.</p>
   </div>
   
@@ -90,7 +90,7 @@
                 {#if product.soldOut || product.stock === 0}
                   <button class="buy-button sold-out" disabled>Sold Out</button>
                 {:else}
-                  <button class="buy-button" on:click={() => handleBuy(product.id)}>Buy Now</button>
+                  <button class="buy-button" on:click={() => handleBuy(product.id)}>Buy with Vipps</button>
                 {/if}
               </div>
             </div>
