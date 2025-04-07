@@ -6,7 +6,7 @@
   let error = null;
 
   // Base Vipps payment URL
-  const VIPPS_BASE_URL = "https://qr.vipps.no/..."; // Replace with your actual Vipps payment URL
+  const VIPPS_BASE_URL = "https://qr.vipps.no/box/b4cba3ca-57f3-41c4-8ada-348bb9ee32e1/pay-in"; // Replace with your actual Vipps payment URL
   
   // Base image path
   const IMAGE_BASE_PATH = "/img/"; 

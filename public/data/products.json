@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "name": "Product 1",
-      "description": "A delicious beverage with unique flavors",
-      "price": 99.99,
-      "stock": 5,
+      "name": "Monster Aussie Lemonade",
+      "description": "Billigere enn på REMA!",
+      "price": 27,
+      "stock": 6,
       "soldOut": false,
       "disabled": false
     },
@@ -16,7 +16,7 @@
       "price": 149.99,
       "stock": 0,
       "soldOut": true,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 3,
