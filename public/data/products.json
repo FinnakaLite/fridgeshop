@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "A delicious beverage with unique flavors",
+      "price": 99.99,
+      "stock": 5,
+      "soldOut": false,
+      "disabled": false
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Refreshing drink perfect for any occasion",
+      "price": 149.99,
+      "stock": 0,
+      "soldOut": true,
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Premium quality beverage with rich taste",
+      "price": 199.99,
+      "stock": 3,
+      "soldOut": false,
+      "disabled": true
+    }
+  ]
+} 

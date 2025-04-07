@@ -1,0 +1,95 @@
+:root {
+  /* Base styles */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme variables */
+  --text-color: #213547;
+  --text-secondary: #666666;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --price-color: #2c3e50;
+  --button-bg: #4CAF50;
+  --button-hover: #45a049;
+  --button-disabled: #cccccc;
+  --background-color: #f8fafc;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: rgba(255, 255, 255, 0.87);
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --border-color: #2d3748;
+    --card-bg: #1a1a1a;
+    --price-color: #e2e8f0;
+    --background-color: #242424;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Reset button styles */
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+/* Focus styles */
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--button-bg);
+  outline-offset: 2px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
