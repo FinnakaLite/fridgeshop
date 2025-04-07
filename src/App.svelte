@@ -60,11 +60,11 @@
 </script>
 
 <main>
-  <h1>Fridge Shop</h1>
+  <h1>Butikken i Kjøleskapet</h1>
   
   <div class="welcome-section">
-    <h2>Welcome to Fridge Shop</h2>
-    <p>Discover our selection of premium beverages. We offer a variety of drinks to suit every taste and occasion.</p>
+    <h2>Velkommen! Flere produkter kommer snart!</h2>
+    <p>Butikken holder til i kjøleskapet på IM kjøkkenet. Finn det produktet du vil ha, betal med Vipps og ta den fra kjøleskapet!</p>
   </div>
   
   {#if loading}
@@ -90,7 +90,7 @@
                 {#if product.soldOut || product.stock === 0}
                   <button class="buy-button sold-out" disabled>Sold Out</button>
                 {:else}
-                  <button class="buy-button" on:click={() => handleBuy(product.id)}>Buy with Vipps</button>
+                  <button class="buy-button" on:click={() => handleBuy(product.id)}>Betal med Vipps</button>
                 {/if}
               </div>
             </div>
