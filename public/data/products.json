@@ -5,8 +5,8 @@
       "name": "Monster Aussie Lemonade",
       "description": "Billigere enn på REMA!",
       "price": 27,
-      "stock": 3,
-      "soldOut": false,
+      "stock": 0,
+      "soldOut": true,
       "disabled": false
     },
     {
@@ -14,7 +14,7 @@
       "name": "Sprite Zero Sugar",
       "description": "Den billigeste drikken!",
       "price": 20,
-      "stock": 16,
+      "stock": 11,
       "soldOut": false,
       "disabled": false
     },
@@ -23,7 +23,7 @@
       "name": "Burn Fruit Punch",
       "description": "Søt og god!",
       "price": 31,
-      "stock": 12,
+      "stock": 6,
       "soldOut": false,
       "disabled": false
     },
@@ -32,8 +32,8 @@
       "name": "Boks Energy",
       "description": "Original og YUZU-Lemon Smak!",
       "price": 31,
-      "stock": 4,
-      "soldOut": false,
+      "stock": 0,
+      "soldOut": true,
       "disabled": false
     }
   ]
