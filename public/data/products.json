@@ -7,7 +7,7 @@
       "price": 27,
       "stock": 0,
       "soldOut": true,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 2,
@@ -34,7 +34,7 @@
       "price": 31,
       "stock": 0,
       "soldOut": true,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 5,
