@@ -14,7 +14,7 @@
       "name": "Sprite Zero Sugar",
       "description": "Den billigeste drikken!",
       "price": 20,
-      "stock": 11,
+      "stock": 8,
       "soldOut": false,
       "disabled": false
     },
@@ -23,7 +23,7 @@
       "name": "Burn Fruit Punch",
       "description": "Søt og god!",
       "price": 31,
-      "stock": 6,
+      "stock": 2,
       "soldOut": false,
       "disabled": false
     },
