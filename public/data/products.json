@@ -14,18 +14,18 @@
       "name": "Sprite Zero Sugar",
       "description": "Den billigeste drikken!",
       "price": 20,
-      "stock": 8,
+      "stock": 0,
       "soldOut": false,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 3,
       "name": "Burn Fruit Punch",
       "description": "Søt og god!",
       "price": 31,
-      "stock": 2,
+      "stock": 0,
       "soldOut": false,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 4,
@@ -41,7 +41,7 @@
       "name": "Pepsi MAX",
       "description": "Maximum taste no sugar type shit?",
       "price": 20,
-      "stock": 40,
+      "stock": 6,
       "soldOut": false,
       "disabled": false
     },
@@ -50,7 +50,7 @@
       "name": "Monster Ultra White",
       "description": "Looksmaxxing sigma male klassiker",
       "price": 31,
-      "stock": 24,
+      "stock": 7,
       "soldOut": false,
       "disabled": false
     }
