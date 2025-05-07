@@ -41,18 +41,18 @@
       "name": "Pepsi MAX",
       "description": "Maximum taste no sugar type shit?",
       "price": 20,
-      "stock": 1,
+      "stock": 0,
       "soldOut": false,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 6,
       "name": "Monster Ultra White",
       "description": "Looksmaxxing sigma male klassiker",
       "price": 31,
-      "stock": 1,
+      "stock": 0,
       "soldOut": false,
-      "disabled": false
+      "disabled": true
     },
     {
       "id": 7,
