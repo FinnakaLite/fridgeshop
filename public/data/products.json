@@ -4,10 +4,10 @@
       "id": 1,
       "name": "Monster Aussie Lemonade",
       "description": "Billigere enn på REMA!",
-      "price": 27,
-      "stock": 0,
-      "soldOut": true,
-      "disabled": true
+      "price": 30,
+      "stock": 12,
+      "soldOut": false,
+      "disabled": false
     },
     {
       "id": 2,
@@ -31,17 +31,17 @@
       "id": 4,
       "name": "Boks Energy",
       "description": "Original og YUZU-Lemon Smak!",
-      "price": 31,
-      "stock": 0,
-      "soldOut": true,
-      "disabled": true
+      "price": 30,
+      "stock": 8,
+      "soldOut": false,
+      "disabled": false
     },
     {
       "id": 5,
       "name": "Pepsi MAX",
       "description": "Maximum taste no sugar type shit?",
       "price": 20,
-      "stock": 6,
+      "stock": 1,
       "soldOut": false,
       "disabled": false
     },
@@ -50,7 +50,25 @@
       "name": "Monster Ultra White",
       "description": "Looksmaxxing sigma male klassiker",
       "price": 31,
-      "stock": 7,
+      "stock": 1,
+      "soldOut": false,
+      "disabled": false
+    },
+    {
+      "id": 7,
+      "name": "Red Bull - Regular",
+      "description": "Viiiiiingerrrrr?",
+      "price": 29,
+      "stock": 15,
+      "soldOut": false,
+      "disabled": false
+    },
+    {
+      "id": 8,
+      "name": "NOCCO Blood Orange",
+      "description": "Ganske unik smak og sukkerfri",
+      "price": 27,
+      "stock": 24,
       "soldOut": false,
       "disabled": false
     }
