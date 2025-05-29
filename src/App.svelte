@@ -1,57 +1,26 @@
 <script>
-  import { onMount } from 'svelte';
-
-  let products = [];
-  let loading = true;
-  let error = null;
-
-  // Base Vipps payment URL
   const VIPPS_BASE_URL = "https://qr.vipps.no/..."; // Replace with your actual Vipps payment URL
-  
-  // Base image path
   const IMAGE_BASE_PATH = "/img/"; 
 
-  // Function to convert price to Vipps amount (multiply by 100 and round to nearest integer)
-  function priceToVippsAmount(price) {
-    return Math.round(price * 100);
-  }
+  let products = $state([]);
+  let loadProducts = $state(getProducts());
 
-  // Function to generate Vipps payment link
-  function generateVippsLink(price) {
-    const amount = priceToVippsAmount(price);
-    return `${VIPPS_BASE_URL}?amount=${amount}`;
+  async function getProducts() {
+    const response = await fetch('/data/products.json');
+    if (!response.ok) throw new Error('Failed to load products. Please try again later.');
+	const data = await response.json();
+    products = data.products
+      .filter(product => !product.disabled)
+      .map(product => {
+        // Convert price to Vipps amount
+        const amount = Math.round(product.price * 100);
+        product.link = `${VIPPS_BASE_URL}?amount=${amount}`;
+        product.image = `${IMAGE_BASE_PATH}${product.id}.jpg`;
+        return product;
+      });
   }
-  
-  // Function to generate image path
-  function generateImagePath(productId) {
-    return `${IMAGE_BASE_PATH}${productId}.jpg`;
-  }
-
-  async function loadProducts() {
-    try {
-      const response = await fetch('/data/products.json');
-      if (!response.ok) throw new Error('Failed to load products');
-      const data = await response.json();
-      // Filter out disabled products and add Vipps links and image paths
-      products = data.products
-        .filter(product => !product.disabled)
-        .map(product => ({
-          ...product,
-          link: generateVippsLink(product.price),
-          image: generateImagePath(product.id)
-        }));
-    } catch (err) {
-      console.error('Error loading products:', err);
-      error = 'Failed to load products. Please try again later.';
-    } finally {
-      loading = false;
-    }
-  }
-
-  onMount(loadProducts);
 
   function handleBuy(productId) {
-    // Handle buy button click
     const product = products.find(p => p.id === productId);
     if (product && !product.soldOut && product.stock > 0) {
       window.location.href = product.link;
@@ -67,11 +36,9 @@
     <p>Discover our selection of premium beverages. We offer a variety of drinks to suit every taste and occasion.</p>
   </div>
   
-  {#if loading}
+  {#await loadProducts}
     <div class="loading">Loading products...</div>
-  {:else if error}
-    <div class="error">{error}</div>
-  {:else}
+  {:then}
     <div class="product-list">
       {#each products as product}
         <div class="product-card">
@@ -90,7 +57,7 @@
                 {#if product.soldOut || product.stock === 0}
                   <button class="buy-button sold-out" disabled>Sold Out</button>
                 {:else}
-                  <button class="buy-button" on:click={() => handleBuy(product.id)}>Buy with Vipps</button>
+                  <button class="buy-button" onclick={() => handleBuy(product.id)}>Betal med Vipps</button>
                 {/if}
               </div>
             </div>
@@ -98,7 +65,9 @@
         </div>
       {/each}
     </div>
-  {/if}
+  {:catch error}
+    <div class="error">{error}</div>
+  {/await}
 </main>
 
 <style>
