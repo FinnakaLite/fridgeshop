@@ -40,7 +40,7 @@
       "id": 5,
       "name": "Pepsi MAX (Alle Sorter)",
       "description": "Velg mellom Lime, Lemon eller Original!",
-      "price": 19,
+      "price": 13,
       "stock": 60,
       "soldOut": false,
       "disabled": false
@@ -49,7 +49,7 @@
       "id": 6,
       "name": "Monster - Alle Smaker",
       "description": "All Flavours! All for one low price.",
-      "price": 28,
+      "price": 24,
       "stock": 24,
       "soldOut": false,
       "disabled": false
@@ -58,7 +58,7 @@
       "id": 7,
       "name": "Red Bull - Regular",
       "description": "Viiiiiingerrrrr?",
-      "price": 29,
+      "price": 19,
       "stock": 2,
       "soldOut": false,
       "disabled": false
@@ -67,7 +67,7 @@
       "id": 8,
       "name": "NOCCO Blood Orange",
       "description": "Ganske unik smak og sukkerfri",
-      "price": 27,
+      "price": 18,
       "stock": 8,
       "soldOut": false,
       "disabled": false
@@ -76,7 +76,7 @@
       "id": 9,
       "name": "7up",
       "description": "Basically Sprite men billigere",
-      "price": 19,
+      "price": 13,
       "stock": 20,
       "soldOut": false,
       "disabled": false
